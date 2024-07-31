@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="headerbar"></div>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="images/restaurant.png" alt="Restaurant Logo" class="logo">
+            <span class="restaurant-name">Lavender Bistro</span>
+        </div>
+        <div class="navbar-center">
+            <a href="#about">About</a>
+            <a href="#menu">Food Menu</a>
+            <a href="#" onclick="openModal('book-table-modal')">Book Table</a>
+        </div>
+        <div class="navbar-right">
+            <a href="#home"><img src="images/home.png" alt="Home" class="icon"></a>
+            <a href="#search"><img src="images/search.png" alt="Search" class="icon"></a>
+            <a href="#" onclick="openModal('login-modal')"><img src="images/user.png" alt="Login" class="icon"></a>
+        </div>
+    </nav>
+
+    <div id="home" class="content">
+        <section class="hero">
+            <div class="hero-text">
+                <h1>"Lavender Bistro: Savor the Elegance, Taste the Magic"</h1>
+            </div>
+            <div class="hero-image">
+                <img src="images/mainfood.jpg" alt="Delicious Food">
+            </div>
+        </section>
+
+        <section class="food-items">
+            <div class="food-item">
+                <img src="images/parotta.jpg" alt="Food Item 1">
+                <h3>Parotta and Gravy</h3>
+                <h3>Rate: $80</h3>
+                <button>Buy Now</button>
+            </div>
+            <div class="food-item">
+                <img src="images/dosa.jpg" alt="Food Item 2">
+                <h3>Dosa</h3>
+                <h3>Rate: $70</h3>
+                <button>Buy Now</button>
+            </div>
+            <div class="food-item">
+                <img src="images/sadya.webp" alt="Food Item 3">
+                <h3>Sadya</h3>
+                <h3>Rate: $120</h3>
+                <button>Buy Now</button>
+            </div>
+        </section>
+
+        <section class="why-choose-us">
+            <div class="why-image">
+                <img src="images/why.jpg" alt="Why Choose Us">
+            </div>
+            <div class="why-text">
+                <h2>Why People Choose Us?</h2>
+                <ul>
+                    <li><b>Culinary Experience:</b> We offer a diverse menu featuring gourmet dishes crafted with the finest ingredients by our expert chefs. Each meal is a culinary masterpiece designed to delight your taste buds.</li>
+                    <li><b>Charming Ambiance:</b> Enjoy your meal in our beautifully designed space, where the soothing lavender hues and elegant decor create a relaxing and enchanting dining atmosphere, perfect for any occasion.</li>
+                    <li><b>Exceptional Service:</b> Our friendly and attentive staff are dedicated to providing top-notch service, ensuring that every visit to Lavender Bistro is a memorable and delightful experience for you and your guests.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div id="about" class="content">
+        <h2>About Us</h2>
+        <p>Lavender Bistro is not just a restaurant; it’s a culinary journey that combines exquisite dining with an enchanting
+             atmosphere. Our restaurant is designed to be a haven for food lovers, offering a sophisticated yet relaxed environment
+              where you can enjoy gourmet dishes crafted with passion and precision.<br>
+            <b>Franchise</b> 
+            <br>
+            Lavender Bistro is expanding its horizons through a unique franchise model that focuses on maintaining the essence 
+            of what makes our restaurant special while adapting to new markets. Each franchise location is carefully curated to 
+            reflect the Lavender Bistro brand's commitment to quality, elegance, and exceptional service. As a franchisee, you will
+             have access to our tried-and-true recipes, operational support,
+             and marketing strategies to ensure that your Lavender Bistro location is as successful and beloved as the original.</p>
+        <h2>Our Story</h2>
+        <p>Lavender Bistro started in [Year] with a vision to blend exquisite cuisine with a serene dining experience.
+             Founded by [Founder’s Name] in [City/Town], our restaurant quickly became known for its elegant ambiance and exceptional dishes. 
+             As demand grew, we expanded through franchising, bringing our unique blend of fine dining and tranquility to new locations. 
+             Today, Lavender Bistro continues to offer a retreat from daily life, combining the finest ingredients with impeccable service.
+              Our journey from a single location to a beloved brand 
+            reflects our commitment to quality and the enchanting essence of Lavender Bistro.</p>
+    </div>
+
+    <div id="menu" class="content">
+        <h2>Food Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="images/1.jpg" alt="Menu Item 1">
+            </div>
+            <div class="menu-item">
+                <img src="images/2.jpg" alt="Menu Item 1">
+            </div>
+            <div class="menu-item">
+                <img src="images/3.jpg" alt="Menu Item 1">
+            </div>
+            <div class="menu-item">
+                <img src="images/4.jpg" alt="Menu Item 1">
+            </div>
+            <div class="menu-item">
+                <img src="images/5.jpg" alt="Menu Item 1">
+            </div>
+            <div class="menu-item">
+                <img src="images/6.jpg" alt="Menu Item 1">
+            </div>
+            <div class="menu-item">
+                <img src="images/7.jpg" alt="Menu Item 1">
+            </div>
+            <div class="menu-item">
+                <img src="images/8.jpg" alt="Menu Item 1">
+            </div>
+            <div class="menu-item">
+                <img src="images/9.jpg" alt="Menu Item 1">
+            </div>
+            <div class="menu-item">
+                <img src="images/10.jpg" alt="Menu Item 1">
+            </div>
+            <div class="menu-item">
+                <img src="images/11.jpg" alt="Menu Item 1">
+            </div>
+            <div class="menu-item">
+                <img src="images/12.jpg" alt="Menu Item 1">
+            </div>
+        </div>
+    </div>
+
+    <!-- Book Table Modal -->
+    <div id="book-table-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('book-table-modal')">&times;</span>
+            <h2>Book Your Table</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time">
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('login-modal')">&times;</span>
+            <h2>Sign Up</h2>
+            <form>
+                <label for="full-name">Enter Full Name:</label>
+                <input type="text" id="full-name" name="full-name">
+                <label for="signup-email">Enter E-mail:</label>
+                <input type="email" id="signup-email" name="signup-email">
+                <label for="password">Create Password:</label>
+                <input type="password" id="password" name="password">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" onclick="openModal('signin-modal')">Sign In</a></p>
+        </div>
+    </div>
+
+    <!-- Sign In Modal -->
+    <div id="signin-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signin-modal')">&times;</span>
+            <h2>Sign In</h2>
+            <form>
+                <label for="signin-email">Enter E-mail:</label>
+                <input type="email" id="signin-email" name="signin-email">
+                <label for="signin-password">Enter Password:</label>
+                <input type="password" id="signin-password" name="signin-password">
+                <button type="submit">Sign In</button>
+            </form>
+            <p>Forgot Password? <a href="#">Click here</a></p>
+            <p>Don't have an account? <a href="#" onclick="openModal('login-modal')">Sign Up</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Email: contact@restaurant.com</p>
+        <p>Phone: +1234567890</p>
+        <p>Address: 123 Restaurant St, City</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
